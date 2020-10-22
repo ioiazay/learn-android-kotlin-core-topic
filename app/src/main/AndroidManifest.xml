@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ioia.learn_android_kotlin_core_topic">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".data_and_file.content_provider.ContentProviderActivity"></activity>
+        <activity android:name=".codelab.CodelabActivity" />
+        <activity android:name=".slices.SlicesActivity" />
+        <activity android:name=".app_action.AppActionActivity" />
+        <activity android:name=".google_play.GooglePlayActivity" />
+        <activity android:name=".app_bundles.AppBundlesActivity" />
+        <activity android:name=".web_based.WebBasedActivity" />
+        <activity android:name=".renderscripts.RenderscriptsActivity" />
+        <activity android:name=".connectivity.ConnectivityActivity" />
+        <activity android:name=".sensors.SensorsActivity" />
+        <activity android:name=".camera.CameraActivity" />
+        <activity android:name=".camerax.CameraXActivity" />
+        <activity android:name=".touch_input.TouchInputActivity" />
+        <activity android:name=".user_location.UserLocationActivity" />
+        <activity android:name=".user_data_identity.UserDataIdentityActivity" />
+        <activity android:name=".background_task.BackgroundTaskActivity" />
+        <activity android:name=".audio_video.AudioVideoActivity" />
+        <activity android:name=".image_graphics.ImageGraphicsActivity" />
+        <activity android:name=".ui.UIActivity" />
+        <activity android:name=".navigation.NavigationActivity" />
+        <activity android:name=".architecture.ArchitectureActivity" />
+        <activity android:name=".activity.ActivityActivity" />
+        <activity android:name=".data_and_file.DataAndFileActivity" />
+        <activity android:name=".intent.BasicIntentActivity" />
+        <activity android:name=".intent.IntentMainActivity" />
+        <activity android:name=".intent.IntentActivity" />
+        <activity android:name=".codelab.animation_codelab.CodelabAnimationActivity" />
+        <activity android:name=".animation_transition.ZoomAnimationActivity" />
+        <activity android:name=".animation_transition.FlingAnimationActivity" />
+        <activity android:name=".animation_transition.MoveTheViewActivity" />
+        <activity android:name=".animation_transition.ShowHideViewRevealAnimationActivity" />
+        <activity android:name=".animation_transition.ShowHideViewCardFlipAnimationActivity" />
+        <activity android:name=".animation_transition.ShowHideViewAnimationActivity" />
+        <activity android:name=".animation_transition.AnimatedVectorActivity" />
+        <activity android:name=".animation_transition.AnimationDrawerActivity" />
+        <activity android:name=".animation_transition.AnimationTransitionActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

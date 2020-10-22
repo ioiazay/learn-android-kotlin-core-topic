@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">learn-android-kotlin-core-topic</string>
+    <string name="label_lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tellus nunc, viverra eu eros quis, commodo lobortis sapien. Sed lacinia felis ipsum, vel accumsan tellus ornare non.</string>
+</resources>
