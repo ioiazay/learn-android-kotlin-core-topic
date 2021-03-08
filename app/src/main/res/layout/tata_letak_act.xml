@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.UIActivity">
+    tools:context=".ui.tata_letak.TataLetakActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.appbar.MaterialToolbar
-            app:title="UI"
+            app:title="Tata Letak"
             app:titleTextColor="#FFFFFF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

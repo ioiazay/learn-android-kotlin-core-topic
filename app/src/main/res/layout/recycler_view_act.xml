@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.UIActivity">
+    tools:context=".ui.tata_letak.sub.RecyclerViewActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.appbar.MaterialToolbar
-            app:title="UI"
-            app:titleTextColor="#FFFFFF"
+            app:title="Recycler View"
+            app:titleTextColor="#ffffff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -23,9 +23,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:id="@+id/ll_main"
+        <TextView
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Sudah Dibuat Di Tutorial Terpisah, Tutorial MVVM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

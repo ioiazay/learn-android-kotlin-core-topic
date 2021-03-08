@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.UIActivity">
+    tools:context=".ui.tata_letak.sub.MotionLayoutActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.appbar.MaterialToolbar
-            app:title="UI"
-            app:titleTextColor="#FFFFFF"
+            app:title="Motion Layout"
+            app:titleTextColor="#ffffff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -23,11 +23,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:id="@+id/ll_main"
+        <TextView
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="NULL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
+<!--        <androidx.constraintlayout.motion.widget.MotionLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:layoutDescription="@xml/scene01"-->
+<!--            app:showPaths="true">-->
+
+<!--            <View-->
+<!--                android:id="@+id/button"-->
+<!--                android:layout_width="64dp"-->
+<!--                android:layout_height="64dp"-->
+<!--                android:background="@color/colorAccent"-->
+<!--                android:text="Button" />-->
+
+
+<!--        </androidx.constraintlayout.motion.widget.MotionLayout>-->
 
     </androidx.core.widget.NestedScrollView>
 

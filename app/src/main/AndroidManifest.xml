@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".data_and_file.content_provider.ContentProviderActivity"></activity>
+        <activity android:name=".ui.tata_letak.sub.RecyclerViewActivity"></activity>
+        <activity android:name=".ui.tata_letak.sub.MotionLayoutActivity" />
+        <activity android:name=".ui.tata_letak.TataLetakActivity" />
+        <activity android:name=".ui.tata_letak.sub.ConstraintLayoutActivity" />
+        <activity android:name=".data_and_file.content_provider.ContentProviderActivity" />
         <activity android:name=".codelab.CodelabActivity" />
         <activity android:name=".slices.SlicesActivity" />
         <activity android:name=".app_action.AppActionActivity" />
