@@ -5,6 +5,7 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import com.google.android.material.button.MaterialButton
 import com.ioia.learn_android_kotlin_core_topic.activity.ActivityActivity
@@ -45,30 +46,30 @@ class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.N)
     private fun initLevel(){
         val components = mutableMapOf(
-                "Activity" to ActivityActivity::class.java,
-                "Component Architecture" to ArchitectureActivity::class.java,
-                "Component Navigation" to NavigationActivity::class.java,
-                "Intent and Intent Filter" to IntentActivity::class.java,
-                "UI" to UIActivity::class.java,
+//                "Activity" to ActivityActivity::class.java,
+//                "Component Architecture" to ArchitectureActivity::class.java,
+//                "Component Navigation" to NavigationActivity::class.java,
+//                "Intent and Intent Filter" to IntentActivity::class.java,
+                "Antarmuka Pengguna" to UIActivity::class.java,
                 "Animation & Transition" to AnimationTransitionActivity::class.java,
-                "Image & Graphics" to ImageGraphicsActivity::class.java,
-                "Audio & Video" to AudioVideoActivity::class.java,
-                "Background Task" to BackgroundTaskActivity::class.java,
-                "Data & Files" to DataAndFileActivity::class.java,
-                "User Data & Identity" to DataAndFileActivity::class.java,
-                "User Location" to UserLocationActivity::class.java,
-                "Touch & Input" to TouchInputActivity::class.java,
-                "CameraX" to CameraXActivity::class.java,
-                "Camera" to CameraActivity::class.java,
-                "Sensors" to SensorsActivity::class.java,
-                "Connectivity" to ConnectivityActivity::class.java,
-                "Renderscripts" to RenderscriptsActivity::class.java,
-                "Web-based Content" to WebBasedActivity::class.java,
-                "Android App Bundles" to AppBundlesActivity::class.java,
-                "Google Play" to GooglePlayActivity::class.java,
-                "App Actions" to AppActionActivity::class.java,
-                "Slice" to SlicesActivity::class.java,
-                "Codelab" to CodelabActivity::class.java
+//                "Image & Graphics" to ImageGraphicsActivity::class.java,
+//                "Audio & Video" to AudioVideoActivity::class.java,
+//                "Background Task" to BackgroundTaskActivity::class.java,
+//                "Data & Files" to DataAndFileActivity::class.java,
+//                "User Data & Identity" to DataAndFileActivity::class.java,
+//                "User Location" to UserLocationActivity::class.java,
+//                "Touch & Input" to TouchInputActivity::class.java,
+//                "CameraX" to CameraXActivity::class.java,
+//                "Camera" to CameraActivity::class.java,
+//                "Sensors" to SensorsActivity::class.java,
+//                "Connectivity" to ConnectivityActivity::class.java,
+//                "Renderscripts" to RenderscriptsActivity::class.java,
+//                "Web-based Content" to WebBasedActivity::class.java,
+//                "Android App Bundles" to AppBundlesActivity::class.java,
+//                "Google Play" to GooglePlayActivity::class.java,
+//                "App Actions" to AppActionActivity::class.java,
+//                "Slice" to SlicesActivity::class.java,
+                "Other - Soon" to CodelabActivity::class.java
         )
 
         components.forEach {
@@ -78,6 +79,12 @@ class MainActivity : AppCompatActivity() {
             params.setMargins(16, 16, 16, 16)
             button.layoutParams = params
             button.text = it.key
+
+            if(it.key == "Level 1"){
+                startActivity(Intent(this, it.value))
+            }else{
+                Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show()
+            }
 
             button.setOnClickListener {_ ->
                 startActivity(Intent(this, it.value))

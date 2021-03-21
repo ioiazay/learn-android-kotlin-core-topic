@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/item_panel_biasa"
+        android:title="Item Biasa"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/item_panel_layout"
+        android:title=""
+        app:showAsAction="always"
+        app:actionLayout="@layout/panel_aplikasi_item"/>
+
+    <item android:id="@+id/item_panel_search"
+        android:title="Item Panel Search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+</menu>
